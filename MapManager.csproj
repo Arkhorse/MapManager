@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>Latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <TheLongDarkPath>O:\Steam\steamapps\common\TheLongDark</TheLongDarkPath> <!-- This should point to wherever your games primary EXE is -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="STBlade.Modding.TLD.Il2CppAssemblies.Windows" Version="2.10.0" />
+    <PackageReference Include="STBlade.Modding.TLD.ModSettings" Version="1.9.0" />
+  </ItemGroup>
+	
+
+  <!-- Most commonly used using's. Add to this so you dont need to define them in the cs files -->
+  <ItemGroup>
+    <Using Include="System.Reflection" />
+    <Using Include="Il2Cpp" />
+    <Using Include="HarmonyLib" />
+    <Using Include="MelonLoader" />
+    <Using Include="UnityEngine" />
+  </ItemGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <!-- This is a build event. It will copy your dll to the currently defined TheLongDarkPath's Mods folder -->
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy /y &quot;$(BaseOutputPath)\$(Configuration)\net6.0\$(AssemblyName).dll&quot; &quot;$(TheLongDarkPath)\Mods&quot;" />
+  </Target>
+
+</Project>
