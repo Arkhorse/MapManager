@@ -1,4 +1,6 @@
-﻿namespace MapManager
+﻿using ModSettings;
+
+namespace MapManager
 {
     internal class Settings : JsonModSettings
     {
