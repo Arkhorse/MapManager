@@ -1,0 +1,16 @@
+** Map Manager v1.1.0 **
+
+**Features:**
+- Show Player Arrow
+- Center on player
+- Reveal Map
+- Survey Mapping Options:
+	- Modify Range
+	- Modify Surveying Time
+	- Automatic use of Polaroid's (even if you don't have them)
+
+**Not Compatible:**
+- Map Tweaks (contains the some of the same features)
+
+Repo:		<https://github.com/Arkhorse/MapManager>
+Download: 	<https://github.com/Arkhorse/MapManager/releases/latest>
