@@ -5,7 +5,7 @@
     {
         public override void OnInitializeMelon()
         {
-            Settings._settings.OnLoad();
+            Settings.OnLoad();
 #if DEBUG
             Log("LOADED");
 #endif
