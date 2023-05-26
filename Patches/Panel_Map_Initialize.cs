@@ -1,4 +1,4 @@
-﻿namespace MapManager.Patches
+﻿namespace MapManager
 {
     [HarmonyPatch(typeof(Panel_Map), nameof(Panel_Map.Enable), new Type[] { typeof(bool), typeof(bool) })]
     internal class Panel_Map_Initialize

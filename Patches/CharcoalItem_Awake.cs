@@ -1,4 +1,4 @@
-﻿namespace MapManager.Patches
+﻿namespace MapManager
 {
     [HarmonyPatch(typeof(CharcoalItem), nameof(CharcoalItem.Awake))]
     internal class CharcoalItem_Awake

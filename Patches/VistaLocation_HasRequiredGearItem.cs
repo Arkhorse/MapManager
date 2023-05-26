@@ -1,4 +1,4 @@
-﻿namespace MapManager.Patches
+﻿namespace MapManager
 {
     [HarmonyPatch(typeof(VistaLocation), nameof(VistaLocation.HasRequiredGearItem))]
     internal class VistaLocation_HasRequiredGearItem
