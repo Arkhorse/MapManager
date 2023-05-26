@@ -21,13 +21,6 @@
 #endif
                 resetOpts |= Panel_Map.ResetOpts.CenterOnPlayer;
             }
-            if (Settings._settings.RevealMap)
-            {
-#if DEBUG
-                MapManager.Log("RevealMap is true");
-#endif
-                __instance.RevealCurrentScene();
-            }
             __instance.ResetToNormal(resetOpts);
         }
     }
