@@ -31,7 +31,7 @@ namespace MapManager
         public float MapSurveyMultTime      = 1f;
 
         [Name("Polaroid's Discovered")]
-        [Description("Surveying vistas w/o polaroid's will silently add it to inventory. Finding polaroid's will not discover their locations")]
+        [Description("Surveying vistas w/o polaroid's will silently add the relevant Polaroid to your inventory. Finding Polaroid's will not reveal their locations.")]
         public bool MapWithPolariods =       false;
 
 #if DEBUG
