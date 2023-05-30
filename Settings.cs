@@ -17,7 +17,7 @@ namespace MapManager
 
         [Name("Reveal The map")]
         [Description("Set this to be able to map the entire region")]
-        public KeyCode RevealMap            = KeyCode.None;
+        public KeyCode RevealMap            = KeyCode.BackQuote;
 
         [Section("Map Surveying")]
         [Name("Range Mulitplier")]
