@@ -38,7 +38,22 @@ namespace MapManager
         [Description("Will force reveal any vista locations within range")]
         public bool RevealVista                 = false;
 
-        private void RefreshFields()
+        protected override void OnChange(FieldInfo field, object? oldValue, object? newValue)
+        {
+            if ( field.Name == nameof(EnableArrow)
+                 || field.Name == nameof(CenterOnPlayer)
+                 || field.Name == nameof(RevealMap)
+                 || field.Name == nameof(MapSurveyMult)
+                 || field.Name == nameof(MapSurveyMultTime)
+                 || field.Name == nameof(MapWithPolariods)
+                 || field.Name == nameof(RevealVista) )
+            {
+                Instance.Refresh();
+            }
+            base.OnChange(field, oldValue, newValue);
+        }
+
+        private void Refresh()
         {
             SetFieldVisible(nameof(EnableArrow),        true);
             SetFieldVisible(nameof(CenterOnPlayer),     true);
@@ -51,7 +66,7 @@ namespace MapManager
         internal static void OnLoad()
         {
             Instance.AddToModSettings("Map Manager");
-            Instance.RefreshFields();
+            Instance.Refresh();
         }
     }
 }
