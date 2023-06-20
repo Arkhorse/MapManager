@@ -1,4 +1,4 @@
-namespace TEMPLATE
+namespace MapManager
 {
     public class Logger
     {
