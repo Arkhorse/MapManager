@@ -4,7 +4,7 @@ namespace MapManager
 {
     internal class Settings : JsonModSettings
     {
-        internal static Settings _settings = new();
+        internal static Settings Instance { get; } = new();
 
         [Section("Main")]
         [Name("Enable Map Arrow")]
@@ -50,8 +50,8 @@ namespace MapManager
 
         internal static void OnLoad()
         {
-            _settings.AddToModSettings("Map Manager");
-            _settings.RefreshFields();
+            Instance.AddToModSettings("Map Manager");
+            Instance.RefreshFields();
         }
     }
 }
