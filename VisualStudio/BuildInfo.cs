@@ -8,7 +8,7 @@
         /// <summary>Who made the mod</summary>
         public const string Author = "The Illusion";
         /// <summary>Current version (Using Major.Minor.Build) </summary>
-        public const string Version = "1.1.1";
+        public const string Version = "1.1.2";
         #endregion
         #region Optional
         /// <summary>What the mod does</summary>
