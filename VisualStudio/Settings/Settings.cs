@@ -38,22 +38,6 @@ namespace MapManager
         [Description("Will force reveal any vista locations within range")]
         public bool RevealVista                 = false;
 
-
-//        protected override void OnConfirm()
-//        {
-//            RefreshFields();
-//#if DEBUG
-//            MapManager.Log($"==============================================================================");
-//            MapManager.Log($"EnableArrow:           {EnableArrow}       ");
-//            MapManager.Log($"CenterOnPlayer:        {CenterOnPlayer}    ");
-//            MapManager.Log($"RevealMap:             {RevealMap}         ");
-//            MapManager.Log($"MapSurveyMult:         {MapSurveyMult}     ");
-//            MapManager.Log($"MapSurveyMultTime:     {MapSurveyMultTime} ");
-//            MapManager.Log($"MapWithPolariods:      {MapWithPolariods}  ");
-//            MapManager.Log($"==============================================================================");
-//#endif
-//        }
-
         private void RefreshFields()
         {
             SetFieldVisible(nameof(EnableArrow),        true);
