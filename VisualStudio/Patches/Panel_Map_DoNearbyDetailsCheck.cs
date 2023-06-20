@@ -19,10 +19,8 @@
             ref bool shouldAllowVistaReveals
             )
         {
-            MapManager.Log($"PREVIOUS radius : {radius}");
-            radius *= Settings._settings.MapSurveyMult;
-            MapManager.Log($"POST radius : {radius}");
-            shouldAllowVistaReveals = Settings._settings.RevealVista;
+            radius *= Settings.Instance.MapSurveyMult;
+            shouldAllowVistaReveals = Settings.Instance.RevealVista;
         }
     }
 }

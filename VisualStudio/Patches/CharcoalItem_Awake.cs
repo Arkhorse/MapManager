@@ -5,7 +5,7 @@
     {
         private static void Postfix(CharcoalItem __instance)
         {
-            __instance.m_SurveyGameMinutes *= Settings._settings.MapSurveyMultTime;
+            __instance.m_SurveyGameMinutes *= Settings.Instance.MapSurveyMultTime;
         }
     }
 }

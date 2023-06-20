@@ -6,11 +6,11 @@
         internal static Panel_Map.ResetOpts resetOpts = Panel_Map.ResetOpts.Zoomed;
         private static void Postfix(Panel_Map __instance, ref bool enable, ref bool cameFromDetailSurvey)
         {
-            if (Settings._settings.EnableArrow)
+            if (Settings.Instance.EnableArrow)
             {
                 resetOpts |= Panel_Map.ResetOpts.ShowPlayer;
             }
-            if (Settings._settings.CenterOnPlayer)
+            if (Settings.Instance.CenterOnPlayer)
             {
                 resetOpts |= Panel_Map.ResetOpts.CenterOnPlayer;
             }
