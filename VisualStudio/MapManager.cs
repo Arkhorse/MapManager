@@ -7,17 +7,8 @@
         {
             Settings.OnLoad();
 #if DEBUG
-            Log("LOADED");
+            Logger.Log("LOADED");
 #endif
-        }
-        /// <summary>
-        /// Makes logging simpler. Already starts witht the modname
-        /// </summary>
-        /// <param name="message">Message to print</param>
-        /// <param name="parameters"></param>
-        internal static void Log(string message, params object[] parameters)
-        {
-            MelonLogger.Msg($"{message}", parameters);
         }
     }
 }
