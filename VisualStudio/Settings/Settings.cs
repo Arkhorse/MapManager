@@ -15,7 +15,7 @@ namespace MapManager
         [Description("If enabled, will center on where the player is on the map")]
         public bool CenterOnPlayer              = false;
 
-        [Name("Reveal The map")]
+        [Name("BETA: Reveal The map")]
         [Description("Set this to be able to map the entire region")]
         public KeyCode RevealMap                = KeyCode.KeypadDivide;
 
@@ -65,7 +65,7 @@ namespace MapManager
 
         internal static void OnLoad()
         {
-            Instance.AddToModSettings("Map Manager");
+            Instance.AddToModSettings($"{BuildInfo.GUIName}");
             Instance.Refresh();
         }
     }
