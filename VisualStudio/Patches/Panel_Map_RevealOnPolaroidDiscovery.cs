@@ -6,11 +6,9 @@
         private static bool Prefix(ref string polaroidGearItemName, ref bool showOnMap)
         {
 #if DEBUG
-            MapManager.Log($"MapWithPolariods: {Settings._settings.MapWithPolariods}");
-            MapManager.Log("Not Referenced Parameters:");
-            MapManager.Log($"polaroidGearItemName: {polaroidGearItemName}. showOnMap: {showOnMap}");
+            Logger.Log($"polaroidGearItemName: {polaroidGearItemName}. showOnMap: {showOnMap}");
 #endif
-            if (Settings._settings.MapWithPolariods) return false;
+            if (Settings.Instance.MapWithPolariods) return false;
             return true;
         }
     }

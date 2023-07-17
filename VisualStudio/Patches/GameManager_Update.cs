@@ -1,13 +1,11 @@
-﻿using KeyboardUtilities;
-
-namespace MapManager
+﻿namespace MapManager
 {
     [HarmonyPatch(typeof(GameManager), nameof(GameManager.Update))]
     internal class GameManager_Update
     {
         private static void Postfix()
         {
-            if (Il2Cpp.InputManager.instance != null && KeyboardUtilities.InputManager.GetKeyDown(Settings._settings.RevealMap))
+            if (!GameManager.IsMainMenuActive() && InputManager.instance != null && InputManager.GetKeyDown(InputManager.m_CurrentContext, Settings.Instance.RevealMap))
             {
                 InterfaceManager.GetPanel<Panel_Map>().RevealCurrentScene();
             }

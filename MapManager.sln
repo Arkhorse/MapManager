@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapManager", "MapManager.csproj", "{7707D569-BBAF-487F-BF81-B3ECACFDC236}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapManager", "VisualStudio\MapManager.csproj", "{7707D569-BBAF-487F-BF81-B3ECACFDC236}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

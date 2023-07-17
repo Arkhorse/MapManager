@@ -5,10 +5,7 @@
     {
         private static void Postfix(CharcoalItem __instance)
         {
-#if DEBUG
-            MapManager.Log($"MapSurveyMultTime: {Settings._settings.MapSurveyMultTime}");
-#endif
-            __instance.m_SurveyGameMinutes *= Settings._settings.MapSurveyMultTime;
+            __instance.m_SurveyGameMinutes *= Settings.Instance.MapSurveyMultTime;
         }
     }
 }

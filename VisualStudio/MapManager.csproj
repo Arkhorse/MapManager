@@ -19,7 +19,7 @@
 
   <ItemGroup>
     <Reference Include="KeyboardUtilities">
-      <HintPath>O:\Steam\steamapps\common\TheLongDark\Mods\KeyboardUtilities.dll</HintPath>
+      <HintPath>$(TheLongDarkPath)\Mods\KeyboardUtilities.dll</HintPath>
 	<Private>false</Private>
     </Reference>
   </ItemGroup>
