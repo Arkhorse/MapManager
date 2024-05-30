@@ -8,7 +8,7 @@
         /// <summary>Who made the mod</summary>
         public const string Author                  = "The Illusion";
         /// <summary>Current version (Using Major.Minor.Build) </summary>
-        public const string Version                 = "1.1.3";
+        public const string Version                 = "1.1.4";
         /// <summary>Name used on GUI's, like ModSettings</summary>
         public const string GUIName                 = "Map Manager";
         /// <summary>The minimum Melon Loader version that your mod requires</summary>
@@ -29,8 +29,6 @@
         public const string Product                 = "MapManager";
         /// <summary>Culture info</summary>
         public const string Culture                 = null;
-        /// <summary>Any incompatible mods should be listed here</summary>
-        public const string[] IncompatibleMods      = null;
         /// <summary>Priority of your mod. Most of the time you should not need to change this</summary>
         public const int Priority                   = 0;
         #endregion
