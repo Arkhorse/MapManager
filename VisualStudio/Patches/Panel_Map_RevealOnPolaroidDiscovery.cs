@@ -5,11 +5,8 @@
     {
         private static bool Prefix(ref string polaroidGearItemName, ref bool showOnMap)
         {
-#if DEBUG
-            Logger.Log($"polaroidGearItemName: {polaroidGearItemName}. showOnMap: {showOnMap}");
-#endif
-            if (Settings.Instance.MapWithPolariods) return false;
-            return true;
+            Main.Logger.Log($"polaroidGearItemName: {polaroidGearItemName}. showOnMap: {showOnMap}", FlaggedLoggingLevel.Debug);
+            return !Settings.Instance.MapWithPolariods;
         }
     }
 }

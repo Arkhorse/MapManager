@@ -7,13 +7,11 @@
         {
             if (!__result)
             {
-                Logger.Log("Result is false");
+                Main.Logger.Log("Result is false", FlaggedLoggingLevel.Debug);
             }
             if (Settings.Instance.MapWithPolariods && !__result)
             {
-#if DEBUG
-                Logger.Log($"Add: {__instance.m_RequiredGearItem.GetDisplayNameWithoutConditionForInventoryInterfaces()}");
-#endif
+                Main.Logger.Log($"Add: {__instance.m_RequiredGearItem.GetDisplayNameWithoutConditionForInventoryInterfaces()}", FlaggedLoggingLevel.Debug);
                 GameManager.GetPlayerManagerComponent().AddItemToPlayerInventory(__instance.m_RequiredGearItem);
                 __result = true;
             }
