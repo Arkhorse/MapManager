@@ -12,11 +12,11 @@ namespace MapManager
             Settings.OnLoad();
         }
 
-		public override async void OnUpdate()
+		public override void OnUpdate()
 		{
 			if (!GameManager.IsMainMenuActive() && InputManager.instance != null && InputManager.GetKeyDown(InputManager.m_CurrentContext, Settings.Instance.RevealMap))
 			{
-				await Task.Run(() => InterfaceManager.GetPanel<Panel_Map>().RevealCurrentScene());
+				InterfaceManager.GetPanel<Panel_Map>().RevealCurrentScene();
 			}
 		}
 	}
