@@ -22,7 +22,7 @@
         /// <summary>A valid download link</summary>
         public const string DownloadLink            = null;
         /// <summary>Copyright info</summary>
-        public const string Copyright               = "2023";
+        public const string Copyright               = "2023-2024";
         /// <summary>Trademark info</summary>
         public const string Trademark               = null;
         /// <summary>Product Name (Generally use the Name)</summary>
