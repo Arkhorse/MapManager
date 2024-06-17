@@ -30,8 +30,8 @@ namespace MapManager
 		[Slider(0.1f, 5f, NumberFormat = "{0:F2}")]
 		public float MapSurveyMultTime          = 1f;
 
-		[Name("Polaroid's Discovered")]
-		[Description("Surveying vistas w/o polaroid's will silently add the relevant Polaroid to your inventory. Finding Polaroid's will not reveal their locations.")]
+		[Name("Polaroid's Always Discovered")]
+		[Description("Surveying vistas w/o polaroid's will add the relevant Polaroid to your inventory.")]
 		public bool MapWithPolariods            = false;
 
 		[Name("Reveal Vista Locations")]
@@ -39,7 +39,7 @@ namespace MapManager
 		public bool RevealVista                 = false;
 
 		[Name("Unlock Survey")]
-		[Description("Allow surveying at any time")]
+		[Description("Allow surveying at any time.")]
 		public bool UnlockSurvey                = false;
 
 		[Name("Automatically add all dead corpses to the map")]
