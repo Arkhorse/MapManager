@@ -42,6 +42,10 @@ namespace MapManager
 		[Description("Allow surveying at any time")]
 		public bool UnlockSurvey                = false;
 
+		[Name("Automatically add all dead corpses to the map")]
+		[Description("")]
+		public bool AddCorpseToMap = false;
+
 
 		internal static void OnLoad()
 		{
