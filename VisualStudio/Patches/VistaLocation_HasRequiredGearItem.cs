@@ -9,8 +9,8 @@
 			{
 				Main.Logger.Log($"Add: {__instance.m_RequiredGearItem.GetDisplayNameWithoutConditionForInventoryInterfaces()}", FlaggedLoggingLevel.Debug);
 				GameManager.GetPlayerManagerComponent().AddItemToPlayerInventory(__instance.m_RequiredGearItem, true, true);
-				GameManager.GetPlayerManagerComponent().RevealOnPolaroidDiscovery(__instance.m_RequiredGearItem);
-				AddPolaroid(__instance);
+				//GameManager.GetPlayerManagerComponent().RevealOnPolaroidDiscovery(__instance.m_RequiredGearItem);
+				//AddPolaroid(__instance);
 
 				__result = true;
 			}
