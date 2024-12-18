@@ -22,7 +22,7 @@ namespace MapManager
 		[Section("Map Surveying")]
 		[Name("Range Mulitplier")]
 		//[Description("Vanilla = 25")]
-		[Slider(-0.99f, 5f, NumberFormat = "{0:F2}")]
+		[Slider(-0.99f, 25f, NumberFormat = "{0:F2}")]
 		public float MapSurveyMult              = 1f;
 
 		[Name("Map Surveying Time Multiplier")]
